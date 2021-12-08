@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         val add = findViewById<Button>(R.id.add)
         val sub = findViewById<Button>(R.id.sub)
         val showNum = findViewById<TextView>(R.id.num)
@@ -19,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         add.setOnClickListener {
             timesClicked++
             showNum.text = timesClicked.toString()
-
         }
     sub.setOnClickListener {
         timesClicked--
@@ -28,6 +26,5 @@ class MainActivity : AppCompatActivity() {
         }
         showNum.text = timesClicked.toString()
     }
-
     }
 }
